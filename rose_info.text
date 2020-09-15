@@ -1,0 +1,26 @@
+"Peach Rose", "The sweet peach rose conveys a meaning of modesty, genuineness, sincerity and gratitude.", "peach_rose.jpg",
+"White Rose", "White roses often represent purity, innocence and youthfulness.", "white_rose.jpg",
+"Orange Rose", "This bold and fiery bloom often stands for desire, fascination, enthusiasm and energy", "orange_rose.jpg",
+"Pink Rose", "he meaning of pink roses can stand for femininity, elegance, refinement and sweetness.", "pink_rose.jpeg"
+"Red Rose", "Red Roses stand for passion, true love, romance and desire.", "red_rose.jpg"
+
+Issues now:
+1. My app is not able to create roses on the fly
+2. random generation is not implemented yet
+3. I want to render rose show on to user profile page
+4. adding function to water, rotate, message button
+5, need to add more cols to rose model
+6. after click the button, the button change to watered and also save that to the data base
+7. one to many relationship with message to user
+
+thinking about solutions for 1, 2, 3:
+1. create a hash constant to store roes info
+2. create a generate method to randomly generate Roses
+(maybe here somehow save the data into rose)..
+"because of restufl, it is stateless, each request as an independent transaction
+which is unable to use the information from any previous request, so i need some
+other way to remember a user's identity from page to page."
+
+3. use the returned params to create rose in roses_controller
+4. create partials for rendering rose to user_show
+5. uint test each new method and changes for pages
