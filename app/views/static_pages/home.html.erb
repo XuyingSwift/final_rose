@@ -1,0 +1,15 @@
+<% provide(:title, "Home") %>
+<body>
+  <div class="center jumbotron">
+    <h1>Find A Rose for Yourself</h1>
+    <h2>
+      “It is the time you have wasted for your rose that makes your rose so important.”
+    </h2>
+      <%= link_to image_tag("littlePrincess.jpg", alt:"Rose And Princess logo", width: "400"),
+                            class: "center"%>
+      <div class="center">
+        <%= link_to "Sign Up", {:controller => :users, :action => :new},
+                                    {class: "btn btn-primary btn-lg navbar-inverse"} %>
+      </div>
+  </div>
+</body>

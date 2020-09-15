@@ -1,0 +1,30 @@
+<% provide(:title, @rose.name) %>
+<body>
+  <div class="center jumbotron">
+    <h1>You've won lavender</h1>
+    <h2>
+      <%= "Happines" %>
+    </h2>
+      <%= link_to image_tag("lavender_rose", alt: "rose", width: "400"),
+                            class: "center"%>
+  </div
+
+  <div>
+    <table className="rose_btn_table" align="center">
+      <tr>
+        <td>
+          <%= link_to "Water", {:controller => :roses, :action => :new},
+          {class: "btn btn-primary btn-lg "} %>
+        </td>
+        <td>
+          <%= link_to "Rotate", {:controller => :roses, :action => :new},
+          {class: "btn btn-primary btn-lg "} %>
+        </td>
+        <td>
+          <%= link_to "Message", {:controller => :roses, :action => :new},
+          {class: "btn btn-primary btn-lg "} %>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
