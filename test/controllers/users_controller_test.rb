@@ -1,14 +1,20 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
+
   test "should get new" do
-    get users_new_url
+    get new_path
     assert_response :success
   end
 
   test "should get show" do
-    get users_show_url
+    get show_path
     assert_response :success
+  end
+
+  test "should see h1 on users/new page" do
+    get new_path
+    assert_select "h1", "Sign Up Form"
   end
 
 end
